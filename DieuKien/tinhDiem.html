@@ -16,12 +16,15 @@
       <option value="0.25">KV3</option>
     </select>
     <button onclick="tinhDiem()">Tính điểm</button>
+    <p id="kq"></p>
     <script>
       function tinhDiem() {
-        alert(document.getElementById("t").value);
-        alert(document.getElementById("l").value);
-        alert(document.getElementById("h").value);
-        alert(document.getElementById("kv").value);
+        let t = +document.getElementById("t").value;
+        let l = +document.getElementById("l").value;
+        let h = +document.getElementById("h").value;
+        let kv = +document.getElementById("kv").value;
+        let diem = t + l + h + kv;
+        document.getElementById("kq").innerHTML = "Tổng điểm là: " + diem;
       }
     </script>
   </body>
