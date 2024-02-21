@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="x"></div>
+    <input id="y" />
+    <img src="" alt="" />
+    <script>
+      // 1. let, var, const
+      // 2. number, string, boolean
+      // 3. gán giá trị biến là kiểu nào thì biến có kiểu đó
+      // 4.
+      // console.log('Hello');
+      // alert('Hello');
+      // document.write('Hello');
+      // document.getElementById('x').innerHTML = 'Hello'
+      // document.getElementById('y').value = 'Hello'
+      // 5.
+      // prompt()
+      // document.getElementById('y').value
+      // 6.
+      document.write("<h1>Hello</h1>");
+      document.write('<a href=""></a>');
+      document.write('<img src="">');
+      // 7.
+      let ten = prompt("Nhập vào tên: ");
+      alert(ten);
+      // 9.
+      document.write("<h1>" + ten + "</h1>");
+      // 8.
+      let a = prompt("Nhập vào a: ");
+      alert(a ** 2);
+      // 10.
+      let s = prompt("Nhập vào tên: ");
+      document.write('<img src="' + s + '">');
+      // 11. a,b,c >0 . Tổng 2 cạnh > cạnh còn lại
+      let b = prompt();
+      let c = prompt();
+      let d = prompt();
+      if (b > 0 && c > 0 && d > 0 && d + b > c && b + c > d && c + d > b) {
+        alert("Là tam giác");
+      } else {
+        alert("K là tam giác");
+      }
+      // 12. Tổng từ a->b
+      let a12 = prompt();
+      let b12 = prompt();
+      alert(((a12 + b12) * (b12 - a12 + 1)) / 2);
+
+      // 13. ax + b = 0;
+      let a13 = prompt();
+      let b13 = prompt();
+      if (a13 == 0) {
+        if (b13 == 0) {
+          alert("Vô số nghiệm!");
+        } else {
+          alert("Vô nghiệm!");
+        }
+      } else {
+        alert("x = " + -b / a);
+      }
+
+      // 15.
+      let soDien = prompt();
+      let tien = 0;
+      if (soDien < 100) {
+        tien = soDien * 1800;
+      }
+      if (soDien >= 100 && soDien < 200) {
+        tien = 99 * 1800 + (soDien - 99) * 2000;
+      }
+      if (soDien >= 200) {
+        tien = 99 * 1800 + 100 * 2000 + (soDien-199)*2500;
+      }
+    </script>
+  </body>
+</html>

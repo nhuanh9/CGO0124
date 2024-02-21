@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="s1" />
+    <input type="text" id="s2" />
+    <button onclick="tong()">Tính tổng</button>
+    <button onclick="hieu()">Tính hiệu</button>
+    <button onclick="tich()">Tính tích</button>
+    <button onclick="thuong()">Tính thương</button>
+    <h1 id="kq"></h1>
+    <script>
+      function tong() {
+        let a = +document.getElementById("s1").value;
+        let b = +document.getElementById("s2").value;
+        document.getElementById("kq").innerHTML = "Tổng là:" + (a + b);
+      }
+      function hieu() {
+        let a = +document.getElementById("s1").value;
+        let b = +document.getElementById("s2").value;
+        document.getElementById("kq").innerHTML = "Hiệu là:" + (a - b);
+      }
+      function tich() {
+        let a = +document.getElementById("s1").value;
+        let b = +document.getElementById("s2").value;
+        document.getElementById("kq").innerHTML = "Tích là:" + a * b;
+      }
+      function thuong() {
+        let a = +document.getElementById("s1").value;
+        let b = +document.getElementById("s2").value;
+        document.getElementById("kq").innerHTML = "Thương là:" + a / b;
+      }
+    </script>
+  </body>
+</html>
