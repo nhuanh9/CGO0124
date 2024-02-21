@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="t" />
+    <input type="text" id="l" />
+    <input type="text" id="h" />
+    <select name="" id="kv">
+      <option value="0.75">KV1</option>
+      <option value="0.5">KV2-NT</option>
+      <option value="0.25">KV2</option>
+      <option value="0.25">KV3</option>
+    </select>
+    <button onclick="tinhDiem()">Tính điểm</button>
+    <script>
+      function tinhDiem() {
+        alert(document.getElementById("t").value);
+        alert(document.getElementById("l").value);
+        alert(document.getElementById("h").value);
+        alert(document.getElementById("kv").value);
+      }
+    </script>
+  </body>
+</html>
