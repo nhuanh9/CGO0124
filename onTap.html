@@ -6,17 +6,15 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Haha</h1>
-    <h2 id="x"></h2>
-    <input type="text" id="y" />
+    <input type="text" id="x" />
+    <button onclick="f1()">Ấn</button>
+    <h1 id="y"></h1>
     <script>
       // Nhập xuất
-      alert("Hello");
-      document.write("Hello");
-      console.log("Hello");
-      document.getElementById("x").innerHTML = "Hello";
-      let x = prompt("Nhập vào giá trị");
-      document.getElementById("y").value = "Hello " + x;
+      function f1() {
+        let z = document.getElementById("x").value;
+        document.getElementById("y").innerHTML = z * 10;
+      }
       // Biến, KDL, Toán tử
       // Điều kiện
     </script>
