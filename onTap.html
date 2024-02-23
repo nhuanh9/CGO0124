@@ -12,15 +12,60 @@
     <script>
       // Nhập xuất
       // Biến, KDL, Toán tử
-      // Toán tử số học: +, -, *, /, %, ++, --
-      // Toán tử logic:  &&, ||
-      // Toán tử so sánh: <, >, <=, >=, ==, !=
-      // Toán tử gán: =, +=, *=, /=, %=
-      let x = 20; // => x = 21
-      let y = x++; // y = 20
-      let a = 20; // => a = 21
-      let b = ++a; // => b = 21
-      // Điều kiện
+            // Toán tử số học: +, -, *, /, %, ++, --
+            // Toán tử logic:  &&, ||
+            // Toán tử so sánh: <, >, <=, >=, ==, !=
+            // Toán tử gán: =, +=, *=, /=, %=
+      // Điều kiện: if, else, &&, ||
+        
     </script>
+    A, B, C, D: biểu thức điều kiện
+    x, y, z, t: đoạn code cần chạy
+----------------------------
+    if(A) {
+        x
+    }
+    y
+    => Nếu A đúng thì x chạy. y luôn chạy
+---------------------------- 
+    if(A && B) {
+        x
+    } 
+    y
+    => Nếu A và B cùng đúng thì x chạy. y luôn chạy
+---------------------------- 
+    if(A || B) {
+        x
+    } 
+    y
+    => Nếu A hoặc B đúng thì x chạy. y luôn chạy
+---------------------------- 
+    if(A) {
+        x
+    } else {
+        y
+    }
+    z
+    => Nếu A đúng thì x chạy, A sai thì y chạy. z luôn chạy
+---------------------------- 
+    if(A) {
+        x
+    } else if(B){
+        y
+    } else {
+        z
+    }
+    => A đúng x chạy, A sai B đúng thì y chạy, A sai B sai thì z chạy
+---------------------------- 
+    if(A) {
+        x
+        if(B) {
+            y
+        }
+        z
+    } else {
+        t
+    }
+    => A đúng x và z chạy, A đúng B đúng thì y chạy, A sai thì t chạy
   </body>
 </html>
