@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Gia hoa qua</h1>
+    <input type="text" id="hq" />
+    <button onclick="xem()">Xem</button>
+    <h2 id="kq">VND/KG</h2>
+    <script>
+      function xem() {
+        let hq = document.getElementById("hq").value.toLowerCase();
+        let gia = 0;
+        if (hq == "ổi") {
+          gia = 20;
+        }
+        if (hq == "dưa hấu") {
+          gia = 20;
+        }
+        if (hq == "táo") {
+          gia = 30;
+        }
+        document.getElementById("kq").innerHTML = gia + "000 VND/kg";
+      }
+    </script>
+  </body>
+</html>
