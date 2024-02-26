@@ -6,21 +6,21 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Gia hoa qua</h1>
+    <h1>Giá hoa quả</h1>
     <input type="text" id="hq" />
-    <button onclick="xem()">Xem</button>
+    <button onclick="xem()">xem</button>
     <h2 id="kq">VND/KG</h2>
     <script>
       function xem() {
-        let hq = document.getElementById("hq").value.toLowerCase();
+        let hq = document.getElementById("hq").value;
         let gia = 0;
-        if (hq == "ổi") {
+        if (hq == "ổi") {
           gia = 20;
         }
-        if (hq == "dưa hấu") {
+        if (hq == "dưa hấu") {
           gia = 20;
         }
-        if (hq == "táo") {
+        if (hq == "táo") {
           gia = 30;
         }
         document.getElementById("kq").innerHTML = gia + "000 VND/kg";
