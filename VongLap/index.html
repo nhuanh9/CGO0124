@@ -11,10 +11,10 @@
       // In 1000 dòng 'Hello' ra màn hình với document.write()
       // In ra các số từ 1-> 1000: mỗi số trong 1 document.write()
       // Nhập vào a, b. In ra các số từ a đến b.
-
       // Nhập vào a, b. In ra các số chẵn từ a đến b.
       let a = +prompt("Nhập vào a: ");
       let b = +prompt("Nhập vào b: ");
+      
       let dem = a;
       while (dem <= b) {
         if (dem % 2 == 0) {
@@ -22,6 +22,16 @@
         }
         dem++;
       }
+
+      for (let dem = a; dem <= b; dem++) {
+        if (dem % 2 == 0) {
+          document.write(dem + "<br>");
+        }
+      }
+
+      // Nhập vào a, b. In chẵn trong h1 và lẻ trong h2 từ a đến b
+      // Nhập vào a, b, c. In ra các số chẵn lớn hơn c từ đến b.
+      // Nhập vào a, b. Tính tích các số từ a đến b
       // while(A) {
       //     X
       // }
