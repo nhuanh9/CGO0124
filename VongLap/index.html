@@ -9,13 +9,16 @@
     <script>
       // Vòng lặp => Giúp thực hiện các công việc lặp lại 1 cách ngắn gọn
       // In 1000 dòng 'Hello' ra màn hình với document.write()
-      //   In ra các số từ 1-> 1000: mỗi số trong 1 document.write()
-      let x = 1;
-      while (x <= 1000) {
-        document.write(x + "<br>");
-        x = x + 1;
+      // In ra các số từ 1-> 1000: mỗi số trong 1 document.write()
+
+      // Nhập vào a, b. In ra các số từ a đến b.
+      let a = +prompt("Nhập vào a: ");
+      let b = +prompt("Nhập vào b: ");
+      let dem = a;
+      while (dem <= b) {
+        document.write(dem + "<br>");
+        dem++;
       }
-      
       // while(A) {
       //     X
       // }
