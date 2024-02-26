@@ -14,7 +14,7 @@
       // Nhập vào a, b. In ra các số chẵn từ a đến b.
       let a = +prompt("Nhập vào a: ");
       let b = +prompt("Nhập vào b: ");
-      
+
       let dem = a;
       while (dem <= b) {
         if (dem % 2 == 0) {
@@ -30,6 +30,15 @@
       }
 
       // Nhập vào a, b. In chẵn trong h1 và lẻ trong h2 từ a đến b
+      let x = +prompt("Nhập và x: ");
+      let y = +prompt("Nhập và y: ");
+      for (let i = x; i <= y; i++) {
+        if (i % 2 == 0) {
+          document.write("<h1>" + i + "</h1>");
+        } else {
+          document.write("<h2>" + i + "</h2>");
+        }
+      }
       // Nhập vào a, b, c. In ra các số chẵn lớn hơn c từ đến b.
       // Nhập vào a, b. Tính tích các số từ a đến b
       // while(A) {
