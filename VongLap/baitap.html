@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Nhập vào a, b. 
+1. Tính tích các số chẵn từ a đến b
+2. Tính tổng các số chia hết cho 3 và lớn hơn 2
+3. Đếm số lượng số chia hết cho 3 -->
+    <!-- 4. Nhập và x, kiểm tra x có phải số nguyên tố không -->
+    <!-- 8h30 chữa ae nhé -->
+    <script>
+      let a = +prompt("Nhập và a: ");
+      let b = +prompt("Nhập và b: ");
+      let tich = 1;
+      for (let i = a; i <= b; i++) {
+        if (i % 2 == 0) {
+          tich *= i;
+        }
+      }
+      let tong = 0;
+      for (let i = a; i <= b; i++) {
+        if (i > 2 && i % 3 == 0) {
+          tich += i;
+        }
+      }
+      let dem = 0;
+      for (let i = a; i <= b; i++) {
+        if (i % 3 == 0) {
+          dem += 1;
+        }
+      }
+    </script>
+  </body>
+</html>

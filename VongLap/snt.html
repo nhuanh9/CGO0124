@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // snt: số chỉ chia hết cho 1 và chính nó
+      // snt: là số không chia hết cho số nào từ 2 đến nó - 1
+
+      let x = +prompt("Nhập vào x: ");
+      let kq = "Là số nguyên tố!";
+      for (let i = 2; i < x; i++) {
+        if (x % i == 0) {
+          kq = "Không là số nguyên tố!";
+        }
+      }
+      alert(kq);
+    </script>
+  </body>
+</html>
