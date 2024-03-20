@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        Khái niệm: 1 biến đặc biệt - lưu được nhiều giá trị
+        Cách tạo: let x = ['Hello', 2, true, 3, 4, 5];
+        Cách truy xuất 1 phần tử: x[2]
+        *x.length là số lượng phần tử của mảng
+        Cách duyệt: 
+        Các hàm thường dùng:
+        1. push(y): thêm y vào của mảng
+        2. indexOf(z): trả về vị trí của z nếu z có trong mảng
+        Nếu không trả về - 1
+        3. splice(a, b, c):
+            - a: vị trí muốn xóa.
+            - b: số lượng muốn xóa
+            - c: phần tử hoặc nhiều phần tử muốn thêm vào
+        Mảng đa nhiều: là mảng mà phần tử của nó là 1 mảng khác
+     -->
+    <script>
+      // 'abcdefgh' => giống mảng (chạy for để tương tác từng kí tự)
+      // Nhập vào 1 chuỗi, thay thế dấu - thành dấu _
+      // ab-cd-efgh => ab_cd_efgh
+      let str = "ab-cd-efgh".split("");
+      for (let i = 0; i < str.length; i++) {
+        if (str[i] == "-") {
+          str[i] = "_";
+        }
+      }
+      document.write(str.join(""));
+    </script>
+  </body>
+</html>

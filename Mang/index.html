@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+      - Mảng: biến đặc biệt - lưu được 1 giá trị trong 1 cái tên
+      - Cách khai báo, cách duyệt, cách truy xuất
+      - Tìm max
+      - Tìm max 2
+      - Nhập vào x, in ra vị trí của x ở trong mảng (VD: x = 4 => 3. x = 5 => 0, 1, 4 )
+      - Mảng 2 chiều: là mảng mà trong đó có phần là 1 mảng
+      // Tìm max và vị trí của max.
+      // In ra các phần tử > 10.
+      // Tính tổng các phần tử chẵn
+     -->
+    <script>
+      // Cho 1 mảng 2 chiều: có 4 phần tử, mỗi phần tử là 1 mảng có 4 pt con.
+      // Tính tổng đường chéo chính
+      let arr = [
+        [1, 22, 3, 5],
+        [7, 6, 29, 22],
+        [55, 3, 9, 42],
+        [15, 13, 19, 41],
+      ];
+      let tong = 0;
+      // code vào => Tối ưu
+      for (let i = 0; i < arr.length; i++) {
+        tong += arr[i][i];
+      }
+      document.write(tong);
+      // Tính tổng đường chéo phụ: 5(0, 3), 29(1, 2), 3(2, 1), 15 (3, 0)
+      let tong1 = 0;
+      for (let i = 0; i < arr.length; i++) {
+        tong1 += arr[i][arr.length - 1 - i];
+      }
+      document.write(tong1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Nhập và X, Cần có tổng X đồng từ 3 loại giấy bạc 1000 đồng, 2000 đồng, 5000 đồng.
+      // Lập chương trình để tìm ra tất cả các phương án có thể
+      let X = +prompt("Nhập vào số tiền: ");
+      for (let s5 = 0; s5 * 5 <= X; s5++) {
+        for (let s2 = 0; s2 * 2 <= X - s5 * 5; s2++) {
+          let s1 = X - s5 * 5 - s2 * 2;
+          if (s1 >= 0) {
+            document.write(s5 + ", " + s2 + ", " + s1 + "<br>");
+          }
+        }
+      }
+
+      //   5,2 => 6, 11
+      //  2000
+    </script>
+  </body>
+</html>

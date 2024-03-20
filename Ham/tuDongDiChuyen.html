@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img
+      src="https://www.pngall.com/wp-content/uploads/5/Sports-Ball-Transparent.png"
+      id="x"
+      style="width: 100px; position: absolute; left: 200px; top: 100px"
+    />
+    <script>
+      let speedX = 1;
+      setInterval(() => {
+        xx = document.getElementById("x");
+        xx.style.left = parseInt(xx.style.left) + speedX + "px";
+        if (
+          parseInt(xx.style.left) >= window.innerWidth - 100 ||
+          parseInt(xx.style.left) <= 0
+        ) {
+          speedX = -speedX;
+        }
+      }, 1);
+      // Đập qua đập lại
+      // Đi quanh màn hình
+    </script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 1. Viết hàm nhận vào 1 số. Trả về true nếu số đó là số nguyên tố. Trả về False nếu không
+    2. Dùng hàm ở ý 1. Viết 1 hàm nhận vào n và in ra n số nguyên tố đầu tiên -->
+    <script>
+      function checkSNT(x) {
+        let kq = true;
+        for (let i = 2; i < x; i++) {
+          if (x % i == 0) {
+            kq = false;
+          }
+        }
+        return kq;
+      }
+
+      function inNSnt(n) {
+        document.write(2);
+        let x = 3;
+        let dem = 1;
+        while (dem < n) {
+          if (checkSNT(x)) {
+            document.write("<br>" + x);
+            dem++;
+          }
+          x++;
+        }
+      }
+
+      function inNSnt2(n) {
+        let arr = [];
+        arr.push(2);
+        let x = 3;
+        let dem = 1;
+        while (dem < n) {
+          if (checkSNT(x)) {
+            arr.push(x);
+            dem++;
+          }
+          x++;
+        }
+        return arr;
+      }
+      document.write(inNSnt2(15));
+    </script>
+  </body>
+</html>

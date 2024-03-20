@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://www.pngall.com/wp-content/uploads/5/Sports-Ball-Transparent.png" alt="" 
+    id="x"
+    style="width: 100px;position: absolute;left: 200px ; top: 100px;"  />
+    <button onclick="phai()">Sang Phải</button>
+    <button onclick="trai()">Sang Trái</button>
+    <button onclick="tren()">Trên</button>
+    <button onclick="duoi()">Dưới</button>
+    <script>
+        function phai(){
+            let xx =document.getElementById("x");
+            xx.style.left = parseInt(xx.style.left) + 20 + "px";
+        }
+        function trai(){
+            let xx =document.getElementById("x");
+            xx.style.left = parseInt(xx.style.left) - 20 + "px";
+        }
+        function tren(){
+            let xx =document.getElementById("x");
+            xx.style.top = parseInt(xx.style.top) - 20 + "px";
+        }
+        function duoi(){
+            let xx =document.getElementById("x");
+            xx.style.top = parseInt(xx.style.top) + 20 + "px";
+        }
+    </script>
+</html>

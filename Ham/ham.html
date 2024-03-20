@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        Hàm được hiểu là cú pháp gom code và cho phép dùng nhiều lần mà cần viết lại
+        function ten(x, y, z...) {
+            A
+            return t
+        }
+        x, y, z... : đầu vào của hàm => nhận vào, truyền vào
+        t: đầu ra của hàm => trả lại hoặc trả về
+        A: đoạn code xử lý
+ -->
+    <script>
+      // Tạo hàm nhận vào một đối số dạng số,
+      // Tăng giá trị đối số đó lên 1 và trả lại giá trị cho lời gọi hàm.
+      // Gọi hàm từ trong phần <body> của trang web và hiển thị kết quả lên màn hình.
+      //   function bai2(a) {
+      //     a = a + 1;
+      //     return a;
+      //   }
+      //   alert(bai2(10));
+      //   alert(bai2(20));
+      //   Tạo hàm nhận vào hai tham số.
+      //   Nếu giá trị của tham số thứ nhất lớn hơn tham số thứ hai, hiển thị hộp thoại thông báo cho người dùng.
+      //   Nếu giá trị của tham số thứ nhất nhỏ hơn hoặc bằng tham số thứ hai, trả về tổng của hai tham số.
+      //   function bai3(x, y) {
+      //     if (x > y) {
+      //       alert("X > Y");
+      //     } else {
+      //       return x + y;
+      //     }
+      //   }
+      //   alert(bai3(5, 3));
+
+      //   Viết hàm nhận vào một số,
+      //   kiểm tra xem nếu số đưa vào có phải là nguyên dương không.
+      //   Nếu là nguyên dương trả về true, ngược lại trả về false.
+      function check(a) {
+        if (a >= 0) {
+          return "true";
+        } else {
+          return "false";
+        }
+      }
+      alert(check(-5));
+    </script>
+  </body>
+</html>

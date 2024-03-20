@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--Vòng lặp là cú pháp trong lập trình giúp lặp 1 đoạn code nhiều lần -->
+    <!-- 
+        while(A) {
+            X
+        }
+        Nếu A đúng thì làm X
+
+        for(A; B; C){
+            X
+        }
+        A chạy trước B và chỉ chạy 1 lần thường dùng để khởi tạo biến đếm
+        B: Nếu B đúng thì C và X chạy
+        C: Chạy sau X, thường dùng để thay đổi biến đếm
+
+        do {
+            X    
+        } while (A)
+        X chắc chắn chạy 1 lần trước khi kiểm tra A đúng hay sai
+        Nếu A đúng thì làm X
+     -->
+    <script>
+      let N = +prompt("Nhập và N:");
+      let S = +prompt("Nhập và S:");
+      let demo = 0;
+      for (let x = 0; x <= N; x++) {
+        for (let y = 0; y <= S - x; y++) {
+          let z = S - (x + y);
+          if (z >= 0) {
+            demo++;
+            document.write(x + "," + y + "," + z + "<br>");
+          }
+        }
+      }
+      document.write(demo);
+    </script>
+  </body>
+</html>
