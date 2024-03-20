@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Bài 1: Viết hàm tính bình phương của một số bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.
+    Bài 2: Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được
+    Bài 3: Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được. -->
+    <script>
+      function bp(x) {
+        return x * x;
+      }
+
+      function cv(r) {
+        return 2 * r * 3.14;
+      }
+
+      function cv(r) {
+        return r * r * 3.14;
+      }
+
+      function gt(x) {
+        let kq = 1;
+        for (let i = 2; i <= x; i++) {
+          kq *= i;
+        }
+        return kq;
+      }
+      alert(gt(5));
+    </script>
+  </body>
+</html>

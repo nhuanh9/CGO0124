@@ -30,5 +30,13 @@
             let xx =document.getElementById("x");
             xx.style.top = parseInt(xx.style.top) + 20 + "px";
         }
+        window.addEventListener('keydown', (e) => {
+            if(e.key == 'a') {
+                trai();
+            }
+            if(e.key == 'd') {
+                phai();
+            }
+        })
     </script>
 </html>
